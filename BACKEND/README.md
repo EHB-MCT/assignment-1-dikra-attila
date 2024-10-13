@@ -1,5 +1,6 @@
-# Your project name
-A short description of your project. 
+# Starterfile frontend and backend
+
+A short description of your project.
 
 Next, read this example and adapt it to your project.
 
@@ -7,16 +8,31 @@ If you want to add more sections, please do so after the existing ones (avoid bu
 
 Live link: [website.be](website.be) (optional)
 
+This is a starterfile for coding project involving Frontend and Backend.
+
 ## Up & running (optional)
+
 - This should contain step by step instructions to run your project
 - Login information is mentioned here if applicable.
 
-## Sources 
+to run the project
 
-Given are some examples, delete and replace with your own.
+- in terminal type cd BACKEND
+- then type node index.js
 
-- [Multi auth in Laravel](https://stackoverflow.com/questions/50514738/multi-auth-use-one-page-login-laravel) used in http > controller > LoginController.php (line 18-67)
-- [Audio from ChatGPT](https://chatgpt.com/c/66dae37e-6da8-8001-99ab-245ad328416a) used in resources > music
-- [Chatgpt.com](https://chatgpt.com) ⚠️ this is an invalid example, because it links to a homepage instead of a specific page or issue
-- Generate a ChatGPT share link: options (three dots) > share.
-- If your lecturer still sees these default examples, you're in trouble
+to test here are the routes for BACKEND
+
+- http://localhost:3000/
+- http://localhost:3000/api/get
+
+Testing in postman
+
+- POST body :{ "key": "value" } http://localhost:3000/api/post
+- PUT body :{ "key": "value" } http://localhost:3000/api/put
+- PACTH body :{ "key": "value" } http://localhost:3000/api/patch
+- DELETE http://localhost:3000/api/delete
+
+## Sources
+
+- [Chatgpt.com](https://chatgpt.com/share/66ffaef7-17c4-800e-b6ab-32f50a27c564) used for inspiration and help in BACKEND:index.js
+- [Chatgpt.com](https://chatgpt.com/share/670bd2d8-76f0-800e-a2f2-a48484034412) used to fix errors in BACKEND/index.js
