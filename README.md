@@ -17,6 +17,8 @@ This is a starterfile for coding project involving Frontend and Backend.
 
 to run the project
 
+- open the project in visual studio code
+- open the terminal
 - in terminal type cd BACKEND
 - then type node index.js
 
@@ -33,6 +35,10 @@ Testing in postman
 - DELETE http://localhost:3000/api/delete
 
 ## Sources
+
+For Frontend:
+
+For Backend:
 
 - [Chatgpt.com](https://chatgpt.com/share/66ffaef7-17c4-800e-b6ab-32f50a27c564) used for inspiration and help in BACKEND:index.js
 - [Chatgpt.com](https://chatgpt.com/share/670bd2d8-76f0-800e-a2f2-a48484034412) used to fix errors in BACKEND/index.js
