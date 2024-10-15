@@ -1,9 +1,11 @@
+/*Reset browser settings*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/*body styling*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f5;
@@ -16,6 +18,7 @@ body {
     padding: 20px;
 }
 
+/*header styling*/
 header {
     width: 100%;
     background-color: #007bff;
@@ -26,6 +29,7 @@ header {
     margin-bottom: 30px;
 }
 
+/*different styling for h1 and h2 headers*/
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -38,6 +42,7 @@ h2 {
     margin-bottom: 0;
 }
 
+/*Flexbox container styling*/
 .container {
     background-color: #fff;
     border-radius: 12px;
@@ -56,6 +61,7 @@ h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/*button styling*/
 button {
     padding: 12px 24px;
     background-color: #007bff;
@@ -76,6 +82,7 @@ button:active {
     transform: translateY(0);
 }
 
+/*response styling*/
 #response {
     margin-top: 20px;
     font-size: 20px;
@@ -83,6 +90,7 @@ button:active {
     font-style: italic;
 }
 
+/*image styling*/
 .image {
     max-width: 100%;
     height: auto;
@@ -92,6 +100,7 @@ button:active {
     border: 2px solid #007bff;
 }
 
+/*footer styling*/
 footer {
     margin-top: 30px;
     color: #666;
