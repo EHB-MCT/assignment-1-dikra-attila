@@ -1,9 +1,16 @@
+//Load veriables from .env file
 require("dotenv").config();
+
+//Import necessary modules
 const express = require("express");
 const cors = require("cors");
 const app = express();
+
+//uncomment this if you want to connect to mongodb
 //const { MongoClient } = require("mongodb");
 //const client = new MongoClient(process.env.FINAL_URL);
+
+//set the port to either the port in .env or default to 3000
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
