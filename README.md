@@ -2,18 +2,10 @@
 
 A short description of our project.
 
-Next, read this example and adapt it to your project.
-
-If you want to add more sections, please do so after the existing ones (avoid burying your sources under a lot of text!).
-
-Live link: [website.be](website.be) (optional)
-
 This is a starterfile for coding project involving Frontend and Backend.
+Everything is explained in the comments and if you want to add more sections, please do so after the existing ones.
 
 ## Up & running (optional)
-
-- This should contain step by step instructions to run your project
-- Login information is mentioned here if applicable.
 
 to run the project
 
@@ -21,6 +13,7 @@ to run the project
 - open the terminal
 - in terminal type cd BACKEND
 - then type node index.js
+- then click on go live to see the website in your browser
 
 to test here are the routes for BACKEND
 
@@ -37,6 +30,7 @@ Testing in postman
 ## Sources
 
 For Frontend:
+
 - [Chatgpt.com](https://chatgpt.com/share/670d20af-3ef8-8007-b100-ac8144208f55) used to help making sure the frontend works correctly
 
 For Backend:
