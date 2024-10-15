@@ -1,6 +1,6 @@
 # Starterfile frontend and backend
 
-A short description of your project.
+A short description of our project.
 
 Next, read this example and adapt it to your project.
 
@@ -37,6 +37,7 @@ Testing in postman
 ## Sources
 
 For Frontend:
+- [Chatgpt.com](https://chatgpt.com/share/670d20af-3ef8-8007-b100-ac8144208f55) used to help making sure the frontend works correctly
 
 For Backend:
 
