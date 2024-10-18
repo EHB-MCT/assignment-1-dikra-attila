@@ -18,21 +18,10 @@ to run the project
 - if you see Server running on port http://localhost:3000 that means your backend is running
 - then click on go live to see the website in your browser
 
-.gitignore
-
-- create a .gitignore file in the folder BACKEND
-- Type this in the file:
-
-package.json
-package-lock.json
-node_modules
-
-- this will make sure that thes files are not picked up un github
-
 .env file
 
 - the .env file is a template for you to change
-- after you used the template be sure to write .env in the .gitignore file
+- after you used the template be sure to write .env in the .gitignore file so that github cannot read the info in it
 
 to test here are the routes for BACKEND
 
