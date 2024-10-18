@@ -16,7 +16,8 @@ to run the project
 - type npm install express cors dotenv mongodb
 - then type node index.js
 - if you see Server running on port http://localhost:3000 that means your backend is running
-- then click on go live to see the website in your browser
+- if you do not already have the extension live server go into the extensions in visual studio code and install Live Server by Ritwick Dey
+- then click on go live (at the bottom of your window) to see the website in your browser
 
 .env file
 
