@@ -29,6 +29,35 @@ header {
     margin-bottom: 30px;
 }
 
+/* Navigation Bar */
+nav {
+    background-color: #007bff;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 4px;
+}
+
 /*different styling for h1 and h2 headers*/
 h1 {
     font-size: 36px;
