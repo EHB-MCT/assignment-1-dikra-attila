@@ -12,8 +12,27 @@ to run the project
 - open the project in visual studio code
 - open the terminal
 - in terminal type cd BACKEND
+- type npm init -y
+- type npm install express cors dotenv mongodb
 - then type node index.js
+- if you see Server running on port http://localhost:3000 that means your backend is running
 - then click on go live to see the website in your browser
+
+.gitignore
+
+- create a .gitignore file in the folder BACKEND
+- Type this in the file:
+
+package.json
+package-lock.json
+node_modules
+
+- this will make sure that thes files are not picked up un github
+
+.env file
+
+- the .env file is a template for you to change
+- after you used the template be sure to write .env in the .gitignore file
 
 to test here are the routes for BACKEND
 
