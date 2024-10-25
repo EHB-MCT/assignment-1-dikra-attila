@@ -1,51 +1,25 @@
-//Load veriables from .env file
-require("dotenv").config();
-
-//Import necessary modules
+// Import required modules
 const express = require("express");
-const cors = require("cors");
-const app = express();
+const config = require("./config/config"); // Load configuration settings
+const apiRoutes = require("./routes/apiRoutes"); // Import API route definitions
+const logger = require("./middleware/logger"); // Custom middleware for logging requests
+const errorMiddleware = require("./middleware/errorMiddleware"); // Middleware for handling errors
 
-//uncomment this if you want to connect to mongodb
-//const { MongoClient } = require("mongodb");
-//const client = new MongoClient(process.env.FINAL_URL);
+const app = express(); // Create an Express application instance
 
-//set the port to either the port in .env or default to 3000
-const PORT = process.env.PORT || 3000;
-
+// Use built-in middleware to parse JSON request bodies
 app.use(express.json());
-app.use(cors());
 
-//root
-app.get("/", (req, res) => {
-	res.status(200).send("Welcome to the root");
-});
+// Use custom middleware to log incoming requests
+app.use(logger);
 
-//GET route (placeholder)
-app.get("/api/get", (req, res) => {
-	res.status(200).send("placeholder for get route");
-});
+// Set up the API routes under the "/api" prefix
+app.use("/api", apiRoutes);
 
-//POST route (placeholder)
-app.post("/api/post", (req, res) => {
-	res.status(200).send("placeholder for post route");
-});
+// Error handling middleware, which will catch any unhandled errors
+app.use(errorMiddleware);
 
-// PUT route (placeholder)
-app.put("/api/put", (req, res) => {
-	res.status(200).send("placeholder for put route");
-});
-
-// DELETE route (placeholder)
-app.delete("/api/delete", (req, res) => {
-	res.status(200).send("placeholder for delete route");
-});
-
-// PATCH route (placeholder)
-app.patch("/api/patch", (req, res) => {
-	res.status(200).send("placeholder for patch route");
-});
-
-app.listen(PORT, () => {
-	console.log(`Server running on port http://localhost:${PORT}`);
+// Start the server on the configured port, logging the port number
+app.listen(config.port, () => {
+	console.log(`Server running on port ${config.port}`);
 });
